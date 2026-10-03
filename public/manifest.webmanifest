@@ -1,0 +1,14 @@
+{
+  "name": "Mi negocio",
+  "short_name": "Mi negocio",
+  "description": "Punto de venta para negocios pequeños, sin internet.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F5EFE3",
+  "theme_color": "#20140A",
+  "lang": "es-MX",
+  "icons": [
+    { "src": "/icono.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

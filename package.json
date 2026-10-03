@@ -1,0 +1,26 @@
+{
+  "name": "pos-informal",
+  "private": true,
+  "version": "0.8.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "tunel": "cloudflared tunnel --config tunel.yml --url http://127.0.0.1:5180",
+    "build": "vite build",
+    "ver": "vite preview",
+    "subir": "vite build && wrangler pages deploy dist --project-name=pos-informal",
+    "probar": "node pruebas/correr.cjs"
+  },
+  "dependencies": {
+    "lucide-react": "^0.456.0",
+    "qrcode": "^1.5.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "esbuild": "^0.28.2",
+    "react-test-renderer": "^18.3.1",
+    "vite": "^6.0.5"
+  }
+}

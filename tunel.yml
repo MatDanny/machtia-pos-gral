@@ -1,0 +1,9 @@
+# Config vacio a proposito.
+#
+# Sin esto, cloudflared lee C:\Users\Danny\.cloudflared\config.yml --el del
+# tunel "machtia" de la clinica-- y aplica SUS reglas de enrutamiento. Como la
+# direccion de trycloudflare no empata con ninguno de sus nombres, cae en la
+# regla de cajon "http_status:404" y nunca llega a Vite.
+#
+# Apuntando aqui, cloudflared arranca sin reglas y usa la que le damos con
+# --url. No toca nada de la configuracion de la clinica.
